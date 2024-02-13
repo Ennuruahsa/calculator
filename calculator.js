@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.olayEkle('Belge yüklendi', () => {
     const sonucInput = document.getElementById('sonuc');
     const buttons = document.querySelectorAll('.box');
     let mevcutIfade = '';
 
     buttons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.olayEkle('click', () => {
             const buttonValue = this.textContent;
             if (button.classList.contains('sayi')) {
                 mevcutIfade += buttonValue;
